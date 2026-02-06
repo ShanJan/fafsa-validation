@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from models.application import FAFSAApplication
 
 app = FastAPI(title="FAFSA Validation Service")
 
