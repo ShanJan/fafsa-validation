@@ -8,6 +8,6 @@ app = FastAPI(title="FAFSA Validation Service")
 def health_check():
     return {"status": "running"}
 
-@app.post("/validate")
+@app.post("/validate") ## TRY /validate/Docs TO VIEW THE INTERACTIVE DOCS (SWAGGER)
 def validate_application(application: FAFSAApplication):
     return run_validations(application)
